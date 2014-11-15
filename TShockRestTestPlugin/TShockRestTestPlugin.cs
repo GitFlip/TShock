@@ -1,4 +1,8 @@
-﻿using System;
+﻿// GitFlip
+// Need to figure out where to get the Mircosoft.VisualStudo libraries because
+// Currently I do not have them and it is causing a compile error
+/*
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -190,3 +194,4 @@ namespace TshockRestTestPlugin
 		}
 	}
 }
+*/
