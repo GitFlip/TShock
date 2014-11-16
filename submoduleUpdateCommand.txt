@@ -1,5 +1,15 @@
 After commiting changes in the TerrariaAPI-Server repo this repo (TShock) needs to be synced to the new version of the TerrariaAPI-Server. To do this, do the following:
+11/16/2014:
+* Copy git-sub-sync to the following location: B:\Users\<username>\AppData\Local\GitHub\PortableGit_ed44d00daa128db527396557813e7b68709ed0e2\libexec\git-core
+* Open GitHub Client
+* Right click on Tshock repo on the left
+* Click "Open in Git Shell"
+* Type the following command: git sub-sync
+* Go back to GitHub Client and you will see Unsynced Changes labled "Submodule Sync". Click the Sync button in the top right corner to Sync local changes to the repo.
 
+
+
+11/15/2014:
 * Open GitHub Client
 * Right click on Tshock repo on the left
 * Click "Open in Git Shell"
