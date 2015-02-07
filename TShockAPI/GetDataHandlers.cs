@@ -3054,7 +3054,7 @@ namespace TShockAPI
 				return true;
 
 			// player is attempting to crash clients
-			if (type < -48 || type >= Main.maxItemTypes)
+			if (type < -48 || type >= (Main.maxItemTypes + Main.maxSTWItemTypes))
 			{
 				args.Player.SendData(PacketTypes.ItemDrop, "", id);
 				return true;

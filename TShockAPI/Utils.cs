@@ -345,7 +345,7 @@ namespace TShockAPI
 			int type = -1;
 			if (int.TryParse(idOrName, out type))
 			{
-				if (type >= Main.maxItemTypes)
+                if (type >= (Main.maxItemTypes + Main.maxSTWItemTypes))
 					return new List<Item>();
 				return new List<Item> {GetItemById(type)};
 			}
@@ -374,7 +374,7 @@ namespace TShockAPI
 			var found = new List<Item>();
 			Item item = new Item();
 			string nameLower = name.ToLower();
-			for (int i = -48; i < Main.maxItemTypes; i++)
+            for (int i = -48; i < (Main.maxItemTypes + Main.maxSTWItemTypes); i++)
 			{
 				item.netDefaults(i);
 				if (item.name.ToLower() == nameLower)

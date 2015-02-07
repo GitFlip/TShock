@@ -4750,7 +4750,7 @@ namespace TShockAPI
 			{
 				item = matchedItems[0];
 			}
-			if (item.type < 1 && item.type >= Main.maxItemTypes)
+            if (item.type < 1 && item.type >= (Main.maxItemTypes + Main.maxSTWItemTypes))
 			{
 				args.Player.SendErrorMessage("The item type {0} is invalid.", itemNameOrId);
 				return;
@@ -4912,7 +4912,7 @@ namespace TShockAPI
 			else
 			{
 				var item = items[0];
-				if (item.type >= 1 && item.type < Main.maxItemTypes)
+                if (item.type >= 1 && item.type < (Main.maxItemTypes + Main.maxSTWItemTypes))
 				{
 					var players = TShock.Utils.FindPlayer(plStr);
 					if (players.Count == 0)

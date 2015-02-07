@@ -620,7 +620,7 @@ namespace TShockAPI
 		private void ComputeMaxStyles()
 		{
 			var item = new Item();
-			for (int i = 0; i < Main.maxItemTypes; i++)
+            for (int i = 0; i < (Main.maxItemTypes + Main.maxSTWItemTypes); i++)
 			{
 				item.netDefaults(i);
 				if (item.placeStyle > 0)
